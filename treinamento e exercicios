@@ -1,0 +1,64 @@
+// this is a js file
+// Franciele Dorr Dos Santos
+
+////ESTRUTURA DE UM OBJETO (DE DUAS PROPRIEDADES)
+
+//const professor = {
+  //  nome: 'Vitor',
+  //  idade: 27,
+  //  email: 'vitor@gmail.com'
+//}
+
+//valores de um objeto - acessando
+
+//*NOTAÇAO DE PONTO
+
+//console.log(professor.idade)
+//NOTACAO DE COLCHETES[]
+//console.log(professor["email"])
+
+//ALTERAR VALOR DE UM OBJETO
+
+//professor.nome = 'Mika'
+//professor['email'] = 'profmika@gmail.com'
+
+
+let objeto = {
+    direção:'Roxann Dawson',
+    nome:'O Milagre Da Fé',
+    ano: 2019,
+    elenco:['ChrissyMetz', 'MarcelRuiz', 'Mike Colter'],
+    javiu: Boolean(true)
+    
+
+}
+console.log(objeto.direção);
+console.log(objeto.nome);
+console.log(objeto["ano"]);
+console.log(objeto["elenco"]);
+console.log(objeto["javiu"])
+
+
+let objetoPessoa = {
+    nome: "Franciele",
+    idade: 28,
+    genero: "feminino",
+    musica: "gospel",
+}
+console.log(objetoPessoa.nome);
+console.log(objetoPessoa.idade);
+console.log(objetoPessoa["genero"]);
+console.log(objetoPessoa["musica"]);
+
+//exercico 1.
+//Roxann Dawson
+//O Milagre Da Fé
+//2019
+//['ChrissyMetz', 'MarcelRuiz', 'Mike Colter']
+//true
+
+//exercicio 2.
+//Franciele
+//28
+//feminino
+//gospel
