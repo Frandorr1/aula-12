@@ -62,3 +62,92 @@ console.log(objetoPessoa["musica"]);
 //28
 //feminino
 //gospel
+
+//ACESSANDO VALORES DIFERENTÕES
+
+const donoDoPet ={
+    nome: "VITOR HUGO",
+    pet: {
+    nomeDoPet: "wanda",
+    raca: "vira-lata",
+    idade: 1,
+}
+}
+
+const curso = {
+    nome: 'noturno frontend',
+    linguagens: ["js", "css", "html"]
+}
+
+
+const professores =[
+{nome: "andrei", mudulo: 1},
+{nome: "vitor", modulo: 2},
+{nome: "Mika", modulo: 3}
+]
+console.log(professores[1].nome)
+
+//ADICIONANDO PROPRIEDADES
+
+//notação de ponto:
+curso.numeroEstudantes = 50
+
+//notação de colchetes:
+curso["numeroEstudantes"] = 50
+
+
+
+//exer:
+
+//objeto.personagens = ["personagens", "pergonagem 2", "personagem 3"];
+//console.log(objeto,elenco[o] + " -> "+ objeto.personagens [0]);
+//console.log(objeto,elenco[1] + " -> "+ objeto.personagens [1]);
+//console.log(objeto,elenco[2] + " -> "+ objeto.personagens [2]);
+
+//objeto.elenco[0] = "xuxa";
+//console,log(objeto);
+
+
+//ESPALHAMENTO
+//COPIA DE UM OBJETO, OU SEJA FAZ UMA COPIA DO OBJETO COM AS DETERMINADAS ALTERAÇÕES MAS NAO ALTERA A O PRIMEIRO OBJETO(OBJETO ORIGINAL)
+
+const usuario = {
+    nome: 'prof',
+    idade: 25,
+    email: 'prof@senacrs.com.br',
+    cidade: 'São Paulo'
+}
+
+const novoUsuario = {
+    ...usuario,
+    nome: 'Joao',
+    idade: 28
+}
+
+// ARRAYS COPIAS
+const listaDeNomes = ['mika', 'paula', 'vitor']
+const copiaListaDeNomes = [...listaDeNomes]
+copiaListaDeNomes[0]
+console.log(listaDeNomes);
+
+
+
+const pessoa = {
+    nome: "Fran",
+    idade: 28
+}
+
+
+const novoPessoa = {
+    ...pessoa,
+    comidaPref:["Pizza", "lasanha", "feijão"],
+melhorAmigo:{
+    nome: "Silvani",
+    idadeAmigo: 48,
+}
+}
+console.log(`o nome da pessoa é ${novoPessoa.nome} e suas comidas preferidas são ${novoPessoa.comidaPref}.Sua melhor amiga se chama ${novoPessoa.melhorAmigo.nome} e tem ${novoPessoa.melhorAmigo.idadeAmigo}anos`);
+
+
+///o nome da pessoa é Fran e suas comidas preferidas são Pizza,lasanha,feijão.Sua melhor amiga se chama Silvani e tem 48 anos.
+
